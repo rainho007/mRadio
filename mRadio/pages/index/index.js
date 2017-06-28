@@ -3,13 +3,19 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '点击头像听音乐...',
     userInfo: {}
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  //绑定头像点击事件处理函数，跳到音乐播放界面
+  bindViewTap2Music:function() {
+    wx.navigateTo({
+        url: '../music/music',
     })
   },
   onLoad: function () {
